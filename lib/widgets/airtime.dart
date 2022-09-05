@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
 class Airtime extends StatefulWidget {
   const Airtime({Key? key}) : super(key: key);
@@ -19,11 +17,13 @@ class _AirtimeState extends State<Airtime> {
           padding: const EdgeInsets.symmetric(horizontal: 20),
           child:
               Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
-            Text('Select Network'),
-            SizedBox(height: 10,),
+            const Text('Select Network'),
+            const SizedBox(
+              height: 10,
+            ),
             SizedBox(
               height: 80,
               child: ListView(
@@ -37,30 +37,30 @@ class _AirtimeState extends State<Airtime> {
                 ],
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
-            Text('Select account'),
-            SizedBox(
+            const Text('Select account'),
+            const SizedBox(
               height: 10,
             ),
             TextField(
               decoration: InputDecoration(
                   hintText: 'Select account',
-                      hintStyle: TextStyle(color: Colors.grey),
-                  suffixIcon: Icon(Icons.keyboard_arrow_down),
+                  hintStyle: const TextStyle(color: Colors.grey),
+                  suffixIcon: const Icon(Icons.keyboard_arrow_down),
                   border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(10))),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
-            Text(' Choose a Recepient'),
-            SizedBox(
+            const Text(' Choose a Recepient'),
+            const SizedBox(
               height: 10,
             ),
             ListTile(
-              title: Text(
+              title: const Text(
                 "My Number",
               ),
               leading: Radio(
@@ -73,7 +73,7 @@ class _AirtimeState extends State<Airtime> {
                   }),
             ),
             ListTile(
-              title: Text(
+              title: const Text(
                 "My contact",
               ),
               leading: Radio(
@@ -86,7 +86,7 @@ class _AirtimeState extends State<Airtime> {
                   }),
             ),
             ListTile(
-              title: Text(
+              title: const Text(
                 "New Number",
               ),
               leading: Radio(
@@ -98,22 +98,22 @@ class _AirtimeState extends State<Airtime> {
                     });
                   }),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
-            Text('Enter Phone Number'),
-            SizedBox(
+            const Text('Enter Phone Number'),
+            const SizedBox(
               height: 10,
             ),
             TextField(
               decoration: InputDecoration(
                   hintText: 'Phone Number',
-                  hintStyle: TextStyle(color: Colors.grey),
-                  suffixIcon: Icon(Icons.keyboard_arrow_down),
+                  hintStyle: const TextStyle(color: Colors.grey),
+                  suffixIcon: const Icon(Icons.keyboard_arrow_down),
                   border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(10))),
-            ), 
-            SizedBox(
+            ),
+            const SizedBox(
               height: 40,
             ),
             SizedBox(
@@ -123,9 +123,9 @@ class _AirtimeState extends State<Airtime> {
                   style: ElevatedButton.styleFrom(
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(15)),
-                      primary: Color(0xFF5A39B7)),
+                      primary: const Color(0xFF5A39B7)),
                   onPressed: () {},
-                  child: Text('Pay Now')),
+                  child: const Text('Pay Now')),
             )
           ]),
         ),
@@ -135,7 +135,7 @@ class _AirtimeState extends State<Airtime> {
 
   Widget networkTile({required String image}) {
     return Container(
-      margin: EdgeInsets.all(8),
+      margin: const EdgeInsets.all(8),
       height: 80,
       width: 70,
       decoration: BoxDecoration(
