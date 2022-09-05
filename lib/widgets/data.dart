@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Data extends StatefulWidget {
-  Data({Key? key}) : super(key: key);
+class DataTile extends StatefulWidget {
+  DataTile({Key? key}) : super(key: key);
 
   @override
-  State<Data> createState() => _DataState();
+  State<DataTile> createState() => _DataTileState();
 }
 
-class _DataState extends State<Data> {
+class _DataTileState extends State<DataTile> {
   String _groupValue = '';
   String _getValue = '';
 
@@ -56,13 +56,13 @@ class _DataState extends State<Data> {
             const SizedBox(
               height: 20,
             ),
-            const Text(' Choose a data bundle'),
+            const Text(' Choose a DataTile bundle'),
             const SizedBox(
               height: 10,
             ),
             TextField(
               decoration: InputDecoration(
-                  hintText: 'Select Data Plan',
+                  hintText: 'Select DataTile Plan',
                   suffixIcon: const Icon(Icons.keyboard_arrow_down),
                   border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(10))),

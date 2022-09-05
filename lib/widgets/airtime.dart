@@ -38,7 +38,7 @@ class _AirtimeState extends State<Airtime> {
               ),
             ),
             const SizedBox(
-              height: 20,
+              height: 15,
             ),
             const Text('Select account'),
             const SizedBox(
@@ -99,7 +99,7 @@ class _AirtimeState extends State<Airtime> {
                   }),
             ),
             const SizedBox(
-              height: 20,
+              height: 15,
             ),
             const Text('Enter Phone Number'),
             const SizedBox(
@@ -114,7 +114,7 @@ class _AirtimeState extends State<Airtime> {
                       borderRadius: BorderRadius.circular(10))),
             ),
             const SizedBox(
-              height: 40,
+              height: 20,
             ),
             SizedBox(
               height: 50,
@@ -137,7 +137,7 @@ class _AirtimeState extends State<Airtime> {
     return Container(
       margin: const EdgeInsets.all(8),
       height: 80,
-      width: 70,
+      width: 60,
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),
           border: Border.all(width: 2, color: Colors.grey)),

@@ -74,7 +74,7 @@ class UtilityScreen extends StatelessWidget {
               Expanded(
                   child: TabBarView(
                 children: [
-                  const Airtime(), Data()],
+                  const Airtime(), DataTile()],
               ))
             ]),
           ),

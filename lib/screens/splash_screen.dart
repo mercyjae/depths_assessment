@@ -13,7 +13,7 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
-    Timer(const Duration(milliseconds: 300),(){
+    Timer(const Duration(seconds:5),(){
       Navigator.push(context, MaterialPageRoute(builder: (context)=> OnboardingScreen()));
     });
     super.initState();
@@ -28,8 +28,9 @@ class _SplashScreenState extends State<SplashScreen> {
       Align(alignment: Alignment.center,
         child: Container(height: 200,width: 200,
           decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),
+          image: const DecorationImage(image: AssetImage('assets/images/splash.png')),
             border: Border.all(width: 4,color: Colors.white)),
-            child: Image.asset('assets/images/splash.png'),),
+            ),
       )
           ]),
       ),);

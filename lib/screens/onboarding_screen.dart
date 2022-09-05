@@ -89,21 +89,21 @@ class PaymentTile extends StatelessWidget {
             left: 15,
             right: 15,
             child: Container(
-              height: 350,
+              height: 340,
               decoration: BoxDecoration(
                   border: Border.all(width: 2, color: Colors.white),
                   color: Colors.black.withOpacity(0.7),
                   borderRadius: BorderRadius.circular(15)),
               child: Padding(
-                padding: const EdgeInsets.symmetric(vertical: 25),
+                padding: const EdgeInsets.symmetric(vertical: 20),
                 child: Column(children: [
                   Padding(
-                    padding: const EdgeInsets.only(right: 50),
+                    padding: const EdgeInsets.only(right: 70),
                     child: Text(
                       title,
                       style: const TextStyle(
                           color: Colors.white,
-                          fontSize: 20,
+                        fontSize: 18,
                           fontWeight: FontWeight.w600,
                           height: 1.5),
                     ),
@@ -135,7 +135,7 @@ class PaymentTile extends StatelessWidget {
                   const SizedBox(
                     height: 20,
                   ),
-                  SmoothPageIndicator(
+                   SmoothPageIndicator(
                     controller: controller,
                     count: 3,
                     onDotClicked: (index) {
@@ -145,9 +145,9 @@ class PaymentTile extends StatelessWidget {
                     },
                     effect: CustomizableEffect(
                       activeDotDecoration: DotDecoration(
-                        width: 20,
-                        height: 5,
-                        color: Colors.black,
+                        width: 8,
+                        height: 8,
+                        color: Colors.white,
                         borderRadius: BorderRadius.circular(5),
                       ),
                       spacing: 3,
@@ -158,25 +158,26 @@ class PaymentTile extends StatelessWidget {
                         borderRadius: BorderRadius.circular(2),
                       ),
                     ),
-                  )
+                  ),
                 ]),
               ),
             ),
           ),
+         
           Padding(
             padding: const EdgeInsets.only(bottom: 20),
             child: Align(
               alignment: Alignment.bottomCenter,
               child: Container(
-                height: 50,
-                width: 50,
+                height: 40,
+                width: 40,
                 decoration: BoxDecoration(
                     border: Border.all(width: 2, color: Colors.white),
                     borderRadius: BorderRadius.circular(30)),
                 child: const Icon(
                   Icons.close,
                   color: Colors.white,
-                  size: 40,
+                  size: 30,
                 ),
               ),
             ),
